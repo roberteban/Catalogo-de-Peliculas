@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Recomendador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recomendador de Películas del Cine</h1>
+        <label for="age">Ingresa tu edad:</label>
+        <input type="number" id="age" placeholder="Escribe tu edad">
+        
+        <div class="buttons">
+            <button onclick="recomendarPelicula('comedia')">Comedia</button>
+            <button onclick="recomendarPelicula('drama')">Drama</button>
+            <button onclick="recomendarPelicula('musical')">Musical</button>
+            <button onclick="recomendarPelicula('crimen')">Crimen</button>
+        </div>
+
+        <p id="recomendacion"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
