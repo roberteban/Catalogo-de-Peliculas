@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cine Recomendador</title>
+    <!-- Enlace al archivo CSS para los estilos de la página -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>Recomendador de Películas del Cine</h1>
+        
+        <!-- Input para ingresar la edad del espectador -->
         <label for="age">Ingresa tu edad:</label>
         <input type="number" id="age" placeholder="Escribe tu edad">
         
+        <!-- Botones para seleccionar el género de la película -->
         <div class="buttons">
             <button onclick="recomendarPelicula('comedia')">Comedia</button>
             <button onclick="recomendarPelicula('drama')">Drama</button>
@@ -19,9 +23,11 @@
             <button onclick="recomendarPelicula('crimen')">Crimen</button>
         </div>
 
+        <!-- Donde se mostrará la recomendación de película -->
         <p id="recomendacion"></p>
     </div>
 
+    <!-- Enlace al archivo JavaScript para la lógica de la página -->
     <script src="script.js"></script>
 </body>
 </html>
